@@ -1,0 +1,62 @@
+.toolbar {
+  display: flex;
+  flex-direction: column;
+  color: white;
+}
+
+.toolbar .top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  background: #fc1f4a;
+}
+
+.toolbar .top h4 {
+  flex: 1;
+  margin: 0;
+  text-align: center;
+  font-weight: 500;
+}
+
+.toolbar .bottom {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #d4163c;
+  padding: 10px 10px 10px 20px;
+}
+
+.toolbar .bottom > i.fas {
+  padding: 0 10px;
+}
+
+.toolbar .bottom .search {
+  flex: 1;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  padding: 0 20px 0 0;
+}
+
+.toolbar .bottom .search i.fas {
+  position: absolute;
+  align-self: center;
+  left: 0;
+  margin: 0 0 0 13px;
+  color: hsla(0, 0%, 85%, 1);
+}
+
+.toolbar .bottom .search input {
+  background: white;
+  width: 100%;
+  max-width: 300px;
+  padding: 7px 10px 5px 35px;
+  font-size: 0.8em;
+  border: none;
+  border-radius: 20px;
+}
+
+.toolbar .bottom .search input::placeholder {
+  color: hsla(0, 0%, 80%, 1);
+}

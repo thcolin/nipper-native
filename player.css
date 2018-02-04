@@ -1,0 +1,209 @@
+.player progress {
+  height: 3px;
+  width: 100%;
+  -webkit-appearance: none;
+}
+
+.player progress::-webkit-progress-bar {
+  background: rgba(0, 0, 0, 0.2);
+}
+
+.player progress::-webkit-progress-value {
+  background: #fc1f4a;
+}
+
+.player.ajared .placeholder, .player.opened .placeholder {
+  height: 91px;
+}
+
+.player .container {
+  position: absolute;
+  transition: top 700ms ease;
+  z-index: 2;
+}
+
+.player.closed .container {
+  top: 100vh;
+}
+
+.player.ajared .container {
+  top: calc(100vh - 91px);
+}
+
+.player.opened .container {
+  top: -91px;
+}
+
+.player.raised .container {
+  top: calc(-100vh - 33px);
+}
+
+.player .container .light {
+  display: flex;
+  flex-direction: column;
+  border-top: 1px solid #e6e6e6;
+  background: white;
+}
+
+.player .container .light .bottom {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 10px;
+}
+
+.player .container .light h4, .player .container .light h6 {
+  margin: 2px 0;
+}
+
+.player .container .light h4 {
+  font-weight: 400;
+}
+
+.player .container .light h6 {
+  color: #b3b3b3;
+  font-weight: 400;
+}
+
+.player .container .light .cover {
+  height: 90px;
+  clip-path: polygon(0 14%, 100% 14%, 100% 86%, 0% 86%);
+}
+
+.player .container .light .informations {
+  flex: 1;
+  margin: 0 20px;
+}
+
+.player .container .light .controls i.fas {
+  padding: 0 7px;
+}
+
+.player .container .full {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  border-bottom: 1px solid hsla(0, 0%, 93%, 1);
+}
+
+.player .container .full .cover {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  height: 100vw;
+  overflow: hidden;
+}
+
+.player .container .full .cover img.background {
+  filter: blur(10px);
+  height: 145%;
+  flex: 0 0 auto;
+}
+
+.player .container .full .cover .foreground {
+  position: absolute;
+  display: flex;
+  width: 100%;
+  height: 100%;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.player .container .full .cover .foreground img {
+  width: 80%;
+  clip-path: polygon(0 14%, 100% 14%, 100% 86%, 0% 86%);
+}
+
+.player .container .full .cover .overlay {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
+  width: 100%;
+  color: white;
+  box-shadow: inset 0px 0px 200px rgba(0, 0, 0, 0.3);
+}
+
+.player .container .full .cover .overlay .top {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
+}
+
+.player .container .full .cover .overlay .top i.fas.fa-heart{
+  color: #fc1f4a;
+}
+
+.player .container .full .cover .overlay .bottom {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px;
+  font-size: 0.8em;
+  font-weight: 300;
+}
+
+.player .container .full .panel {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  background: white;
+}
+
+.player .container .full .panel .informations {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  color: rgba(0, 0, 0, 1);
+}
+
+.player .container .full .panel .informations h1, .player .container .full .panel .informations h2 {
+  margin: 0;
+}
+
+.player .container .full .panel .informations h1 {
+  font-weight: 700;
+}
+
+.player .container .full .panel .informations h2 {
+  font-weight: 500;
+  font-style: italic;
+}
+
+.player .container .full .panel .controls {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.player .container .full .panel .controls > div {
+  display: flex;
+  align-items: center;
+}
+
+.player .container .full .panel .controls > div:first-child {
+  padding: 0 0 0 20px;
+}
+
+.player .container .full .panel .controls > div:last-child {
+  padding: 0 20px 0 0;
+}
+
+.player .container .full .panel .controls > div i.fas {
+  padding: 0 15px;
+}
+
+.player .container .full .panel .more {
+  padding: 0 0 20px 0;
+  text-align: center;
+}
+
+.player .container .tracklist {
+  height: calc(100vh - 58px);
+}

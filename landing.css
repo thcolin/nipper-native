@@ -1,0 +1,76 @@
+.landing {
+  height: 100vh;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: column;
+  background: linear-gradient(160deg, rgba(255, 23, 68, 0.9), rgba(197, 17, 98, 0.7)), url('background.jpg');
+  background-size: cover;
+  background-position: center;
+  box-sizing: border-box;
+  padding: 30px 20px;
+}
+
+.landing > div {
+  padding: 10px 0;
+}
+
+.landing .logo {
+  width: 50%;
+}
+
+.landing .logo svg {
+  fill: #ffffff;
+}
+
+.landing .brand {
+  display: flex;
+  align-items: flex-start;
+  flex: 1;
+}
+
+.landing .brand h1 {
+  color: #fc1f4a;
+  background-color: white;
+  font-family: 'Titillium Web', sans-serif;
+  font-size: 5em;
+  line-height: 1.2;
+  font-weight: 900;
+  margin: 0;
+  text-transform: uppercase;
+  padding: 0 10px;
+}
+
+.landing .signin {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.landing .signin button {
+  display: flex;
+  background: white;
+  border-radius: 30px;
+  white-space: nowrap;
+  padding: 15px;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.landing .signin p {
+  text-align: center;
+  font-size: small;
+  color: hsla(0, 0%, 100%, 0.8);
+  font-weight: 300;
+}
+
+.landing button img {
+  width: 1.5em;
+  padding: 0 15px 0 0px;
+}
+
+.landing button span {
+  padding: 0 10px 0 0px;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 400;
+}
